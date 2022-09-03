@@ -1,0 +1,249 @@
+.s-object {
+  position: relative; }
+  .s-object-img {
+    width: 100%;
+    height: 100%; }
+    .s-object-img svg {
+      display: block;
+      width: 100%;
+      height: auto; }
+      .s-object-img svg g {
+        position: relative;
+        z-index: 100; }
+      .s-object-img svg path {
+        opacity: 0;
+        transition: .3s all;
+        position: relative; }
+        .s-object-img svg path:hover {
+          opacity: 1; }
+  .s-object-info {
+    position: absolute;
+    z-index: 1;
+    padding-top: 36px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    pointer-events: none; }
+    .s-object-info-inner {
+      padding: 0 20px; }
+    .s-object-info-title {
+      color: #7590ad;
+      font-family: Montserrat;
+      font-size: 44px;
+      font-weight: 300;
+      line-height: 46px;
+      padding-top: 64px; }
+    .s-object-info-filter {
+      display: -webkit-flex;
+      display: -moz-flex;
+      display: -ms-flex;
+      display: -o-flex;
+      display: flex;
+      align-items: flex-start;
+      align-content: stretch;
+      flex-wrap: nowrap;
+      height: 62px;
+      background-color: white;
+      border-radius: 31px;
+      width: calc(100% + 60px);
+      margin: 0 -30px;
+      margin-top: 44px;
+      padding: 10px 48px 10px 44px;
+      justify-content: flex-start;
+      display: none; }
+      .s-object-info-filter-item {
+        width: 38%; }
+        .s-object-info-filter-item.item1 {
+          position: relative; }
+          .s-object-info-filter-item.item1:after {
+            content: '';
+            position: absolute;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            display: block;
+            width: 1px;
+            height: 50px;
+            background-color: #b5c6d3; }
+        .s-object-info-filter-item.item2 {
+          width: 62%;
+          padding-left: 40px; }
+        .s-object-info-filter-item.active .s-header-btn {
+          color: #cc5803;
+          font-size: 18px;
+          font-weight: 500; }
+          .s-object-info-filter-item.active .s-header-btn span {
+            text-decoration: none; }
+      .s-object-info-filter .s-header-btn {
+        background: transparent;
+        color: #363938;
+        width: auto;
+        font-size: 18px;
+        font-weight: 400; }
+        .s-object-info-filter .s-header-btn span {
+          text-decoration: underline;
+          margin-left: 15px; }
+  .s-object-button {
+    position: absolute;
+    left: 197px;
+    top: 389px; }
+    .s-object-button .s-header-btn {
+      border-radius: 31px;
+      width: 312px;
+      height: 62px;
+      background-color: white;
+      color: #363938;
+      font-family: Montserrat;
+      font-size: 18px;
+      font-weight: 500; }
+      .s-object-button .s-header-btn span {
+        padding-left: 15px; }
+  .s-object-hover {
+    display: none;
+    width: 222px;
+    height: 165px;
+    background-color: white;
+    border-radius: 5px;
+    position: absolute; }
+    .s-object-hover:after {
+      content: '';
+      display: block;
+      position: absolute;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+      width: 17px;
+      height: 9px;
+      background-image: url("../img/icon-shape.png");
+      top: -9px; }
+  .s-object-hover {
+    padding: 15px 30px; }
+  .s-object-data {
+    color: #cc5803;
+    font-family: Montserrat;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 26px; }
+  .s-object-flat {
+    padding-top: 10px; }
+    .s-object-flat-item {
+      justify-content: space-between;
+      align-items: center; }
+      .s-object-flat-item + .s-object-flat-item {
+        padding-top: 10px; }
+      .s-object-flat-item .text {
+        color: black;
+        font-family: Montserrat;
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 26px; }
+      .s-object-flat-item .num {
+        color: #f7934c;
+        font-family: Montserrat;
+        font-size: 15px;
+        font-weight: 500;
+        line-height: 24px;
+        text-align: center;
+        width: 26px;
+        height: 26px;
+        border: 1px solid #bac4cc;
+        border-radius: 2px; }
+
+.p-object .s-project {
+  padding-top: 0; }
+
+.p-object .s-project-nav {
+  padding-top: 29px; }
+
+@media only screen and (max-width: 1500px) {
+  .s-object-button {
+    left: 30px; }
+  .s-object-info-title {
+    padding-top: 30px; }
+  .s-object-button {
+    top: 323px; } }
+
+@media only screen and (max-width: 1200px) {
+  .s-object {
+    background-color: #d7e8f5; }
+  .s-object-info {
+    position: relative; }
+  .s-object-button {
+    position: relative;
+    top: auto;
+    left: auto;
+    padding: 0 30px;
+    padding-top: 25px;
+    padding-bottom: 30px; }
+  .s-object-img svg {
+    width: calc(100% + 500px);
+    margin: 0 -250px;
+    height: auto; }
+  .s-object-img {
+    position: relative; }
+  .s-object-info {
+    padding-top: 58px; }
+  .s-object-info-inner {
+    padding: 0 10px; } }
+
+@media only screen and (max-width: 991px) {
+  .s-object-button {
+    display: none; }
+  .s-object-info-title {
+    padding-top: 45px; }
+  .s-object-info-filter {
+    display: flex; }
+  .s-object-info {
+    margin-bottom: -107px; }
+  .s-object-info {
+    pointer-events: auto; } }
+
+@media only screen and (max-width: 565px) {
+  .s-object-info-filter {
+    padding: 10px 25px;
+    margin: 0;
+    width: 100%;
+    margin-top: 44px; }
+  .s-object-info-filter-item.active .s-header-btn {
+    font-size: 16px; }
+  .s-object-info-filter .s-header-btn {
+    font-size: 16px; }
+  .s-object-info-inner {
+    padding: 0; } }
+
+@media only screen and (max-width: 480px) {
+  .s-object-info-title {
+    font-size: 35px;
+    line-height: 1.2; }
+  .s-object-info {
+    margin-bottom: -42px;
+    padding-top: 28px; }
+  .s-object-info-filter {
+    max-width: 320px;
+    margin: 0 auto;
+    width: 100%;
+    margin-top: 19px;
+    padding: 0 15px;
+    height: 30px; }
+  .s-object-info-filter-item.active .s-header-btn {
+    font-size: 9px; }
+  .s-object-info-filter-item.item1 img {
+    width: 13px; }
+  .s-object-info-filter .s-header-btn span {
+    margin-left: 8px; }
+  .s-object-info-filter-item.item2 {
+    padding-left: 15px; }
+    .s-object-info-filter-item.item2 img {
+      width: 15px; }
+  .s-object-info-filter .s-header-btn {
+    font-size: 9px;
+    height: 27px; }
+  .s-object-info-filter-item.item1::after {
+    height: 25px; }
+  .s-object-info-title {
+    padding-top: 18px;
+    font-size: 23px; }
+  .s-object-info {
+    margin-bottom: -61px; }
+  .p-object .s-project-nav {
+    padding-top: 8px; } }

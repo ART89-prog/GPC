@@ -1,0 +1,715 @@
+.s-project
+	background-color: #d7e8f5;
+	padding-top: 37px
+	&-pic
+		&-top
+			justify-content: space-between
+			padding: 0 0px 0 20px
+			align-items: center
+		&-img
+			padding-top: 29px
+			padding-left: 5px
+			img
+				border-radius: 10px;
+	&-title
+		color: #1b1f2f;
+		font-family: Montserrat;
+		font-size: 67px;
+		font-weight: 400;
+		line-height: 1.2
+	&-addr
+		color: #1b1d20;
+		font-family: Montserrat;
+		font-size: 20px;
+		font-weight: 500;
+		line-height: 1.2
+		padding-top: 3px
+		padding-left: 5px
+		img
+			padding-top: 5px
+		span
+			margin-top: -4px;
+			padding-left: 20px;
+	&-nav
+		padding-top: 49px
+		padding-left: 43px
+		padding-bottom: 27px
+		li
+			&:not(:last-child)
+				margin-right: 53px
+			&.active
+				a
+					color: #cc5803;
+					font-weight: 500;
+					&:after
+						transform: scale(1, 1);
+						transform-origin: right center;
+			a
+				font-size: 16px;
+				line-height: 1.2
+				font-family: Montserrat;
+				color: #0a1314;
+				font-weight: 400;
+				position: relative
+				padding: 0 7px
+				transition: .3s all
+				&:hover
+					color: #cc5803;
+				&:after
+					content: ""
+					position: absolute
+					left: 0
+					bottom: -27px
+					display: block
+					background-color: #cc5803;
+					height: 4px
+					width: 100%
+					display: block
+					transform: scale(0, 1);
+					transform-origin: right center;
+					transition: transform 500ms ease;
+	&-info
+		background-color: #ecf2f5;
+		padding-top: 100px
+		padding-bottom: 40px
+		&-inner
+			padding-left: 26px
+		&-line
+			margin: 0 -15px
+		&-block
+			padding: 0 15px
+			width: 50%
+		&-cont
+			padding-top: 37px
+		&-title
+			color: #070f0e;
+			font-family: Montserrat;
+			font-size: 30px;
+			font-weight: 500;
+			line-height: 36px;
+		&-descr
+			color: #070f0e;
+			font-family: Montserrat;
+			font-size: 16px;
+			font-weight: 300;
+			line-height: 24px;
+			padding-top: 11px
+			text-indent: 10px
+		&-img
+			text-align: right
+			display: flex
+			justify-content: flex-end
+			img
+				border-radius: 10px;
+	&-map
+		padding-top: 43px
+		background-color: #ecf2f5;
+		&-title
+			color: #505454;
+			font-family: Montserrat;
+			font-size: 40px;
+			font-weight: 300;
+			line-height: 1.2;
+		&-block
+			margin-top: 50px
+			height: 379px;
+			background-color: #f7f7f7
+	&-benefits
+		padding-top: 89px
+		background-color: #ecf2f5;
+		padding-bottom: 85px
+		&-line
+			margin: 0 -30px -74px
+			padding: 65px 25px 0
+			align-items: stretch
+		&-block
+			width: 50%
+			padding: 0 30px 74px
+		&-item
+			display: -webkit-flex
+			display: -moz-flex;
+			display: -ms-flex;
+			display: -o-flex;
+			display: flex;
+			justify-content: flex-start;
+			align-items: flex-start;
+			align-content: stretch;
+			flex-wrap: wrap;
+			&-icon
+				width: 139px;
+				height: 139px;
+				display: -webkit-flex
+				display: -moz-flex;
+				display: -ms-flex;
+				display: -o-flex;
+				display: flex;
+				justify-content: center
+				align-items: center
+				align-content: stretch;
+				flex-wrap: wrap;
+			&-cont
+				width: calc(100% - 139px)
+				padding-left: 50px
+			&-subtitle
+				font-family: Montserrat;
+				line-height: 24px;
+				color: #cc5803;
+				font-size: 24px;
+				font-weight: 600;
+			&-descr
+				font-family: Montserrat;
+				line-height: 24px;
+				color: #070f0e;
+				font-size: 16px;
+				font-weight: 300;
+				padding-top: 7px
+				max-width: 500px
+		&-button
+			padding-top: 121px
+			display: flex
+			justify-content: center
+	&-docs
+		padding-top: 80px
+		background-color: #ecf2f5;
+		padding-bottom: 185px
+		&-inner
+			padding: 0 25px
+		&-line
+			margin: 0 -15px -92px
+			padding-top: 80px;
+			padding-left: 35px;
+			padding-right: 25px;
+		&-block
+			width: 25%
+			padding: 0 15px 92px
+			text-align: center
+		&-item
+			position: relative
+			z-index: 2
+			display: inline-block
+			vertical-align: top
+			&-img
+				position: relative
+				display: inline-block
+				vertical-align: top
+				transition: .3s all
+				&:hover
+					box-shadow: 0 10px 30px rgba(0,0,0,0.2)
+				&:after
+					content: ''
+					position: absolute
+					left: 0
+					bottom: -34px;
+					display: block;
+					width: 100%;
+					height: 424px;
+					background-size: cover
+					background-position: center bottom
+					background-image: url("../img/docs-sh.png")
+					z-index: -1
+			&-title
+				color: black;
+				font-family: Montserrat;
+				font-size: 17px;
+				font-weight: 600;
+				line-height: 22px;
+				text-align: center
+				padding: 45px 20px 0
+				a
+					color: black;
+			&-date
+				color: #878787;
+				font-family: Montserrat;
+				font-size: 15px;
+				font-weight: 400;
+				text-align: center
+				padding: 13px 20px 0
+				span
+					text-transform: uppercase;
+	&-gallery
+		background-color: #ecf2f5;
+		padding-top: 80px
+		padding-bottom: 120px
+		&-inner
+			padding: 0 20px
+		&-items
+			padding-top: 72px
+		&-item
+			align-items: center
+			+ .s-project-gallery-item
+				padding-top: 85px
+			&-info
+				padding: 0 15px
+				width: 30%
+				padding-left: 12px
+				padding-bottom: 27px
+			&-title
+				color: #070f0e;
+				font-family: Montserrat;
+				font-size: 27px;
+				font-weight: 500;
+				line-height: 36px;
+			&-date
+				color: #878787;
+				font-family: Montserrat;
+				font-size: 15px;
+				font-weight: 400;
+				line-height: 1.2
+				text-transform: uppercase;
+				padding-top: 21px;
+				padding-left: 5px;
+				letter-spacing: 1px
+			&-photo
+				padding: 0 7px
+				width: 70%
+				position: relative
+		&-img
+			display: block
+			border-radius: 10px
+		&-slider
+			margin-right: -200px
+			width: calc(100% + 200px)
+			overflow: hidden
+			.swiper-slide
+				width: auto !important
+
+			img
+				border-radius: 10px;
+			&-arrow
+				width: 62px;
+				height: 62px;
+				background-color: rgba(255,255,255,0.74)	
+				display: -webkit-flex
+				display: -moz-flex;
+				display: -ms-flex;
+				display: -o-flex;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				align-content: stretch;
+				flex-wrap: wrap;	
+				transition: .3s all
+				position: absolute
+				top: 50%
+				transform: translateY(-50%)
+				z-index: 10
+				border-radius: 50%
+				cursor: pointer
+				&.prev
+					left: 14px
+				&.next
+					right: -16px
+				&:hover
+					background-color: #fff
+
+@import responsive
+
+@include respond-to(desktop-wide)
+	.s-project-pic-top
+		padding: 0
+	.s-project-pic-img
+		padding-left: 0
+	.s-project-nav
+		padding-left: 30px
+	.s-project-info-inner
+		padding-left: 0
+	.s-project-info-line
+		align-items: center
+	.s-project-benefits-item-icon
+		width: 100px
+		height: 100px
+	.s-project-benefits-item-cont
+		width: calc(100% - 100px)
+	.s-project-docs-item-img::after
+		height: 347px
+	.s-project-docs-item-title
+		padding: 45px 0 0
+	.s-project-gallery-slider
+		margin-right: -40px
+		width: calc(100% + 40px)
+@include respond-to(desktop)
+	.s-project-benefits-item-cont
+		padding-left: 30px
+	.s-project-docs-line
+		padding: 0
+		padding-top: 80px
+	.s-project-docs-inner
+		padding: 0
+	.s-project-docs-item-img::after
+		height: 331px
+@include respond-to(tablet-large)
+	.s-project-title
+		font-size: 50px;
+	.s-project
+		padding-top: 58px
+	.s-project-pic-top
+		padding: 0 10px
+		display: block
+	.s-project-addr
+		padding-left: 1px
+		padding-top: 8px
+		font-size: 19px;
+	.s-project-addr span
+		margin-top: 8px
+		padding-left: 15px
+	.s-project-pic-button
+		padding-top: 41px
+		display: flex
+		justify-content: flex-start
+	.s-project-pic-img
+		margin: 0 -12px
+		img
+			width: 100%
+	.s-project-nav li a
+		font-size: 20px;
+		white-space: nowrap;
+		padding: 0 3px
+	.s-project-nav-outer
+		position: relative
+		&:after
+			content: ''
+			position: absolute
+			right: -30px
+			top: 8px
+			width: 78px;
+			height: 71px;
+			background-image: linear-gradient(to left, #c2d9eb 0%, transparent 100%);
+			display: block
+			z-index: 2
+			pointer-events: none
+			cursor: pointer
+	.s-project-nav
+		padding-left: 0
+		flex-wrap: nowrap;
+		padding-right: 30px
+		&-wrap
+			display: flex;
+			flex-wrap: nowrap;
+			overflow-x: auto;
+			-webkit-overflow-scrolling: touch;
+			border-bottom: 0
+			-ms-overflow-style: none;  /* Internet Explorer 10+ */
+			scrollbar-width: none; 
+			margin-right: -30px
+			width: calc(100% + 30px)
+			position: relative
+			::-webkit-scrollbar
+				width: 0
+				background-color: transparent
+				display: none;
+			::-webkit-scrollbar-thumb
+				background-color: transparent
+	.s-project-nav
+		padding-top: 35px
+		padding-bottom: 21px
+	.s-project-nav li:not(:last-child)
+		margin-right: 55px
+	.s-project-nav li a::after
+		bottom: -21px
+	.s-project-info
+		padding-top: 25px
+	.s-project-info-title
+		font-size: 32px;
+		line-height: 39px;
+	.s-project-info-block
+		width: 100%
+		+ .s-project-info-block
+			padding-top: 58px
+	.s-project-info-inner
+		padding: 0 0px 0 10px
+	.s-project-info-descr
+		text-indent: 0
+		font-size: 19px;
+		line-height: 27px;
+		padding-top: 17px
+	.s-project-info-img
+		justify-content: center
+		padding-right: 10px
+	.s-project-map-title
+		font-size: 46px;
+		line-height: 59px;
+		text-align: center
+	.s-project-map
+		padding-top: 29px
+	.s-project-map-block
+		margin-top: 42px
+	.s-project-benefits
+		padding-top: 74px
+	.s-project-benefits-line
+		padding: 0
+		padding-top: 45px
+		margin: 0 -15px -40px
+	.s-project-benefits-block
+		width: 100%
+		padding: 0 15px 40px
+	.s-project-benefits-item-icon
+		width: 115px
+		height: 115px
+	.s-project-benefits-item-cont
+		width: calc(100% - 115px)
+		padding-left: 25px
+	.s-project-benefits-item-subtitle
+		font-size: 27px;
+		line-height: 32px;
+	.s-project-benefits-item-descr
+		font-size: 19px;
+		line-height: 27px;
+		max-width: 100%
+		padding-top: 3px
+	.s-project-benefits-button
+		padding-top: 85px
+	.s-project-docs-block
+		width: 33.3%
+	.s-project-gallery
+		padding-top: 64px
+
+	.s-project-gallery-item-info
+		width: 100%
+		padding: 0
+	.s-project-gallery-inner
+		padding: 0
+	.s-project-gallery-item-title
+		font-size: 32px;
+		line-height: 40px;
+	.s-project-gallery-items
+		padding-top: 66px
+	.s-project-gallery-item-date
+		font-size: 19px;
+	.s-project-gallery-item-photo
+		width: 100%
+		padding: 0
+		padding-top: 30px
+	.s-project-gallery-item + .s-project-gallery-item
+		padding-top: 103px
+	.s-project-gallery-slider
+		margin-right: -30px
+		width: calc(100% + 30px)
+	.s-project-nav-outer::after
+		top: 0
+		height: 100%
+		background-size: cover
+
+@include respond-to(tablet)
+	.s-header.style1 .s-header-contacts
+		margin-right: 2px
+	.s-project-pic-button
+		justify-content: center
+	.s-project-nav-wrap
+		margin-right: -40px
+		width: calc(100% + 40px)
+	.s-project-nav-outer::after
+		right: -40px
+	.s-project-docs
+		padding-top: 64px
+		padding-bottom: 114px
+	.s-project-docs-block
+		width: 50%
+		padding: 0 30px 35px
+	.s-project-docs-line
+		padding: 51px 20px 0
+		margin: 0 -30px -35px
+	.s-project-docs-item-title
+		padding-top: 26px
+		font-size: 17px;
+		line-height: 18px;
+	.s-project-docs-item-date
+		padding: 11px 0 0
+	.s-project-docs-item-img::after
+		height: 319px
+	.s-project-gallery-slider-arrow
+		display: none
+
+@include respond-to(mobile)
+	.s-project-pic-top
+		padding: 0
+	.s-project-title
+		font-size: 45px
+	.s-project-nav li:not(:last-child)
+		margin-right: 30px
+	.s-project-pic-img
+		margin: 0
+	.s-project-info-inner
+		padding-left: 0
+	.s-project-info-img
+		padding-right: 0
+	.s-project-map-title
+		font-size: 40px
+		line-height: 1.2
+	.s-project-docs-line
+		padding: 51px 0 0
+		margin: 0 -15px -35px
+	.s-project-docs-block
+		padding: 0 15px 35px
+	.s-project-gallery-img
+		width: 400px
+	.s-project-gallery-slider
+		margin-right: -15px
+		width: calc(100% + 15px)
+
+@include respond-to(mobile1)
+	.s-project-title
+		font-size: 32px
+	.s-project-addr
+		font-size: 17px
+	.s-project-pic-button
+		.s-header-btn.big
+			width: auto
+			height: 45px;
+			font-size: 15px
+	.s-project-info-title
+		font-size: 30px
+		line-height: 36px
+	.s-project-info-descr
+		font-size: 16px
+		line-height: 24px
+	.s-project-map-title
+		font-size: 29px
+	.s-project-benefits-button
+		padding-top: 40px
+		.s-header-btn.big
+			width: auto
+			height: 45px;
+			font-size: 15px
+	.s-project-docs-item-img::after
+		height: 180px
+		bottom: -20px
+	.s-project-docs-item-title
+		font-size: 15px
+	.s-project-docs-item-date
+		font-size: 14px
+	.s-project-gallery-item-title
+		font-size: 27px
+		line-height: 36px
+	.s-project-gallery-img
+		width: 250px
+	
+	.s-project-gallery-item-date
+		font-size: 15px
+	.s-project-gallery-item + .s-project-gallery-item
+		padding-top: 85px
+	.s-project-nav li a
+		font-size: 10px
+		padding: 0
+	.s-project-nav
+		padding-top: 9px
+		padding-bottom: 9px
+	.s-project-nav li a::after
+		bottom: -10px
+		height: 2px
+	.s-project-nav-outer::after
+		height: 36px
+		top: 0
+	.s-project
+		padding-top: 26px
+	.s-project-title
+		font-size: 26px
+	.s-project-addr
+		font-size: 10px
+	.s-project-addr img
+		width: 16px
+	.s-project-addr
+		padding-top: 0
+		padding-left: 4px
+	.s-project-addr span
+		padding-left: 8px
+	.s-project-pic-button
+		padding-top: 18px
+		.s-header-btn.big
+			width: 150px;
+			height: 35px;
+			font-size: 11px;
+			padding: 0 10px;
+	.s-project-pic-img
+		padding-top: 15px
+		margin: 0 -5px
+		padding-bottom: 5px
+	.s-project-info-cont
+		padding: 6px 5px 0;
+	.s-project-info-title
+		font-size: 16px;
+		line-height: 19px;
+	.s-project-info-descr
+		font-size: 10px;
+		line-height: 12px
+		padding-top: 10px;
+	.s-project-info-block + .s-project-info-block
+		padding-top: 28px
+	.s-project-info-img
+		padding: 0 5px
+	.s-project-info-img img
+		border-radius: 5px
+	.s-project-map-title
+		font-size: 23px
+	.s-project-map
+		padding-top: 10px
+	.s-project-map-block
+		height: 190px
+	.s-project-info
+		padding-bottom: 27px
+	.s-project-map-block
+		margin-top: 22px
+	.s-project-benefits
+		padding-top: 38px
+	.s-project-benefits-item-icon
+		width: 60px
+		height: 60px
+		padding: 5px
+	.s-project-benefits-item-cont
+		width: calc(100% - 60px)
+		padding-left: 9px
+	.s-project-benefits-item-subtitle
+		font-size: 14px
+		line-height: 1.2
+		margin-right: -10px
+	.s-project-benefits-line
+		padding-top: 26px
+		margin-bottom: -20px
+	.s-project-benefits-item-descr
+		font-size: 10px
+		line-height: 13px
+	.s-project-benefits-block
+		padding-bottom: 20px
+	.s-project-benefits-button
+		padding-top: 43px
+	.s-project-benefits-button .s-header-btn.big
+		width: 150px;
+		height: 35px;
+		font-size: 11px;
+		padding: 0 10px;
+	.s-project-benefits
+		padding-bottom: 43px
+	.s-project-docs
+		padding-top: 32px
+		padding-bottom: 52px
+	.s-project-docs-line
+		padding: 25px 0px 0
+	.s-project-docs-item-title
+		padding-top: 16px
+		line-height: 10px
+		font-size: 9px
+	.s-project-docs-item-date
+		padding-top: 5px
+		font-size: 8px
+	.s-project-docs-block
+		padding-bottom: 15px
+	.s-project-docs-line
+		margin-bottom: -15px
+	.s-project-gallery
+		padding-top: 34px
+		padding-bottom: 79px
+	.s-project-gallery-items
+		padding-top: 35px
+	.s-project-gallery-item-title
+		font-size: 16px;
+		line-height: 20px;
+	.s-project-gallery-item-date
+		font-size: 9px
+		padding-top: 8px
+	.s-project-gallery-item-photo
+		padding-top: 17px
+	.s-project-gallery-img
+		width: 232px
+	.s-project-gallery-item + .s-project-gallery-item
+		padding-top: 57px
+	.s-project-gallery-slider img
+		border-radius: 5px
