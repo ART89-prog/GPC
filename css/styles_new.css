@@ -315,18 +315,17 @@
   color: #070f0e;
 }
 
-.documents .s-project {
+.documents-page .s-project {
   padding-bottom: 97px;
+  margin-bottom: 74px;
 }
-.documents .s-project-pic-top .right {
+.documents-page .s-project-pic-top .right {
   bottom: -97px;
 }
-.documents .s-project-docs-line {
+.documents-page .s-project-docs-line {
   margin: 0;
 }
-.documents  {
-  padding-top: 75px;
-}
+
 
 
 @media (max-width: 1500px) {
