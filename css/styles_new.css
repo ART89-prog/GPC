@@ -9,9 +9,6 @@
   font-weight: 300;
   color: #070f0e; 
 }
-.s-project-pic {
-  margin-bottom: 98px;
-}
 .s-project-nav {
   padding-top: 23px;
   padding-left: 46px;
@@ -36,6 +33,7 @@
 
 .about_company-info {
   margin-bottom:50px;
+  padding-top: 98px;
 }
 .about_company-info-box {
   display: flex;
@@ -277,6 +275,59 @@
   object-fit: cover;
 }
 
+.partners {
+  padding-top: 75px;
+}
+.partners-title {
+  margin-bottom: 119px;
+}
+.partners-block {
+  display: flex;
+  align-items: center;
+  padding-bottom: 67px;
+  border-bottom: 1px solid #bbc5cb;
+  margin-bottom: 78px;
+  padding-left: 68px;
+}
+.partners-block:last-child {
+  border-bottom: none;
+}
+.partners-img {
+  margin-right: 30px;
+  width: 400px;
+}
+.patners-info {
+  max-width: 600px;
+}
+.patners-info_title {
+  font-family: "Montserrat";
+  font-size: 24px;
+  line-height: 22px;
+  font-weight: 600;
+  color: #000000;
+  margin-bottom: 19px;
+}
+.patners-info_text {
+  font-family: 'Montserrat';
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: 300;
+  color: #070f0e;
+}
+
+.documents .s-project {
+  padding-bottom: 97px;
+}
+.documents .s-project-pic-top .right {
+  bottom: -97px;
+}
+.documents .s-project-docs-line {
+  margin: 0;
+}
+.documents  {
+  padding-top: 75px;
+}
+
 
 @media (max-width: 1500px) {
   .reward_items {
@@ -303,8 +354,7 @@
   }
   .about_company .s-project-nav li:not(:last-child) {
     margin-right: 20px;
-}
-
+  }
 
 
 }
@@ -363,7 +413,7 @@
   .about_company-info-logo {
     margin-right: 45px;
   }
-  .s-project-pic {
+  .about_company-info {
     margin-bottom: 74px;
   }
   .office-img {
@@ -430,6 +480,9 @@
   }
   .principle-left p:first-child {
     margin-bottom: 20px;
+  }
+  .documents-page .s-project-docs-block {
+    padding: 0;
   }
 
 }
@@ -535,98 +588,94 @@
     padding-left: 0;
     padding-bottom: 8px;
   }
-  .s-project-pic {
-    margin-bottom: 37px;
-}
-.about_company-info-text {
-  font-size: 10px;
-  line-height: 1.2;
-}
-.about_company-info-text p span {
-  font-size: 12px;
-  line-height: 1.2;
-}
-.about_company-info-text p:first-child {
-  margin-bottom: 20px;
-}
-.about_company-block-descr {
-  margin-top: 28px;
-}
-.about_company-block-descr-title {
-  font-size: 18px;
-} 
-.about_company-block-descr-text p {
-  font-size: 10px;
-  margin-bottom: 10px;
-}
-.title {
-  font-size: 24px;
-  line-height: 26px;
-  margin-bottom: 27px;
-}
-.about_company-block, 
-.reward, 
-.principle {
-  margin-bottom: 40px;
-}
-.reward_item > * {
-  width: 144px;
-  height: 197px;
-  
-}
-.reward_item img {
-  object-fit: cover;
-}
-.principle-left p {
-  font-size: 10px;
-  line-height: 13px;
-  margin-bottom: 10px;
-} 
-.principle-item_title {
-  font-size: 14px;
-}
-.principle-item_text {
-  font-size: 10px;
-}
-.principle-items > * {
-  margin-bottom: 35px;
-}
-.principle-left p:first-child {
-  margin-bottom: 10px;
-}
-.office-info_adress {
-  font-size: 10px;
-  margin-bottom: 4px;
-}
-.office-info_time {
-  font-size: 12px;
-  margin-bottom: 4px;
-}
-.office-info_operating-mode {
-  font-size: 10px;
-}
-.office_link {
-  font-size: 9px;
-  line-height: 1.2;
-}
-.office-contact {
-  padding: 29px 26px;
-}
-.office-contact_link {
-  font-size: 22px;
-  margin-bottom: 16px;
-}
-.office {
-  margin-bottom: 30px;
-}
-.reward_item:before {
-  height: 197px;
-  bottom: -18px;
-}
-.reward_item {
-  width: 144px;
-  height: 197px;
-}
+  .about_company-info-text {
+    font-size: 10px;
+    line-height: 1.2;
+  }
+  .about_company-info-text p span {
+    font-size: 12px;
+    line-height: 1.2;
+  }
+  .about_company-info-text p:first-child {
+    margin-bottom: 20px;
+  }
+  .about_company-block-descr {
+    margin-top: 28px;
+  }
+  .about_company-block-descr-title {
+    font-size: 18px;
+  } 
+  .about_company-block-descr-text p {
+    font-size: 10px;
+    margin-bottom: 10px;
+  }
+  .title {
+    font-size: 24px;
+    line-height: 26px;
+    margin-bottom: 27px;
+  }
+  .about_company-block, 
+  .reward, 
+  .principle {
+    margin-bottom: 40px;
+  }
+  .reward_item > * {
+    width: 144px;
+    height: 197px;    
+  }
+  .reward_item img {
+    object-fit: cover;
+  }
+  .principle-left p {
+    font-size: 10px;
+    line-height: 13px;
+    margin-bottom: 10px;
+  } 
+  .principle-item_title {
+    font-size: 14px;
+  }
+  .principle-item_text {
+    font-size: 10px;
+  }
+  .principle-items > * {
+    margin-bottom: 35px;
+  }
+  .principle-left p:first-child {
+    margin-bottom: 10px;
+  }
+  .office-info_adress {
+    font-size: 10px;
+    margin-bottom: 4px;
+  }
+  .office-info_time {
+    font-size: 12px;
+    margin-bottom: 4px;
+  }
+  .office-info_operating-mode {
+    font-size: 10px;
+  }
+  .office_link {
+    font-size: 9px;
+    line-height: 1.2;
+  }
+  .office-contact {
+    padding: 29px 26px;
+  }
+  .office-contact_link {
+    font-size: 22px;
+    margin-bottom: 16px;
+  }
+  .office {
+    margin-bottom: 30px;
+  }
+  .reward_item:before {
+    height: 197px;
+    bottom: -18px;
+  }
+  .reward_item {
+    width: 144px;
+    height: 197px;
+  }
 
 
 
