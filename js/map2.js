@@ -31,3 +31,5 @@ const createMap = function() {
  		myMap.geoObjects.add(myPlacemark);
  	}
  };
+
+

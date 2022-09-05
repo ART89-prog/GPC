@@ -698,6 +698,7 @@
   background: #fff;
   border-bottom-left-radius: 10px;
   border-top-left-radius: 10px;
+  max-width: 400px;
 }
 .objects_item-info-title {
   font-family: 'Montserrat';
@@ -707,6 +708,9 @@
   color: #252727; 
   margin-bottom: 49px;
 }
+.objects_item-info-list li a .icon {
+  width: 52px;
+}
 .objects_item-info-list li a img {
   margin-right: 22px;
   flex-shrink: 0;
@@ -715,12 +719,12 @@
   text-decoration: none;
   font-family: "Montserrat";
   font-size: 20px;
-  line-height: 60px;
+  line-height: 1.5;
+  margin-bottom: 17px;
   font-weight: 400;
   color: #0a1314;
   display: flex;
-  align-items: center;
-  width: calc(100% - 50px);
+  align-items: start;
 }
 .objects_item-img {
   position: relative;
@@ -1006,6 +1010,17 @@
     font-size: 18px;
   }
 
+  .objects_items {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+.objects_item-img {
+  width: calc(100% - 395px);
+}
+.objects-page .s-project-pic-top .left {
+  margin-left: 0px;
+}
+
 
 
 
@@ -1138,7 +1153,27 @@
   font-size: 20px;
 }
 
-
+.objects_item {
+  flex-direction: column-reverse;
+}
+.objects_item-img img {
+  position: relative;
+  display: block;
+  border-bottom-right-radius: 0px;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+.objects_item-img {
+  width: 100%;
+}
+.objects_item-info {
+  padding: 52px 46px 59px;
+  background: #fff;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-top-left-radius: 0px;
+  max-width: 100%;
+}
 
 
 
