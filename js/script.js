@@ -1,22 +1,10 @@
 $(() => {
 
 
-	if ($('.modal .swiper-container').length) {
-        new Swiper('.modal .swiper-container', {
-            loop: true,
-            speed: 750,
-            spaceBetween: 0,
-            slidesPerView: 1,
-    
-       		navigation: {
-				nextEl: '.swiper-button-next',
-				prevEl: '.swiper-button-prev',
-			}
-        })
-    }
+	
 
 
-	$('.fancybox').fancybox()
+	//$('.fancybox').fancybox()
 
 
 	$('body').on('click', '.s-news-item', function (e) {
@@ -27,7 +15,30 @@ $(() => {
         Fancybox.show([{
             src: $(this).data('content'),
             type: 'inline'
-        }])
+        }],
+        {
+		    on: {
+		      done: (fancybox, slide) => {
+		        if ($('.modal .swiper-container').length) {
+			        new Swiper('.modal .swiper-container', {
+			            loop: true,
+			            speed: 750,
+			            spaceBetween: 0,
+			            slidesPerView: 1,
+			    
+			       		navigation: {
+							nextEl: '.swiper-button-next',
+							prevEl: '.swiper-button-prev',
+						}
+			        })
+			    }
+		      },
+		    },
+		  }
+  		)
+
+        
+
     })
 
 

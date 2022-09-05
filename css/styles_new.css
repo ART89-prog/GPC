@@ -932,6 +932,34 @@
   color: #070f0e;
 }
 
+.modal .swiper-button-next {
+  right: 16px;
+}
+.modal .swiper-button-prev {
+  left: 16px;
+}
+.modal .swiper-button-next:after, 
+.modal .swiper-button-prev:after {
+  display: none;
+}
+.modal .swiper-button-prev, 
+.modal .swiper-button-next {
+  background: none;
+}
+.modal .swiper-button-next:hover, 
+.modal .swiper-button-prev:hover {
+  background: none;
+}
+.modal .swiper-slide img, 
+.modal .swiper-slide img {
+  border-radius: 10px;
+}
+.modal .swiper-slide, 
+.modal .swiper-slide {
+  border-radius: 10px;
+}
+
+
 
 
 @media (max-width: 1500px) {
