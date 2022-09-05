@@ -692,8 +692,6 @@
 .objects_item {
   border-radius: 10px;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
 }
 .objects_item-info {
   padding: 52px 46px 59px;
@@ -724,12 +722,13 @@
   align-items: center;
   width: calc(100% - 50px);
 }
-
 .objects_item-img {
-  width: 777px;
-  height: 100%;
+  position: relative;
+  width: calc(100% - 470px);
+  object-fit: cover;
 }
 .objects_item-img img {
+  position: absolute;
   width: 100%;
   object-fit: cover;
   flex-shrink: 0;
@@ -738,26 +737,108 @@
   border-top-right-radius: 10px;
 }
 
-/* .objects_item-img {
-  position: relative;
-  overflow: hidden;
-  padding-bottom: 73.9%;
-  background: #ddd;
+
+.contacts {
+  padding-top: 74px;
+  padding-bottom: 187px;
 }
-.objects_item-img img  {
+.contacts-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.contacts-info {
+  margin-right: 36px;
+}
+.contacts-info_adress {
+  font-family: 'Montserrat';
+  font-size: 22px;
+  line-height: 1.2;
+  font-weight: 300;
+  color: #070f0e;
+  margin-bottom: 17px;
+}
+.contacts-info_time {
+  font-family: 'Montserrat';
+  font-size: 24px;
+  font-weight: 700;
+  color: #070f0e;
+  margin-bottom: 14px;
+}
+.contacts-info_operating-mode {
+  font-family: 'Montserrat';
+  font-size: 20px;
+  font-weight: 300;
+  color: #070f0e;
+  line-height: 1.5;
+}
+.contacts-info_link {
+  font-family: 'Montserrat';
+  font-size: 17px;
+  line-height: 36px;
+  color: #070f0e;
+  text-decoration: underline;
+  margin-bottom: 51px;
+  display: block;
+}
+.contacts-info_phone {
+  display: flex;
+  font-family: 'Montserrat';
+  font-size: 20px;
+  line-height: 1.2;
+  font-weight: 400;
+  color: #181919;
+  margin-bottom: 21px;
+}
+.contacts-info_phone a {
+  font-family: 'Montserrat';
+  font-size: 20px;
+  line-height: 1.2;
+  color: #c25806;
+  font-weight: 600;
+  white-space: nowrap;
+}
+.contacts-info_phone a span {
+  color: #717d89;
+}
+
+.contacts_img {
+  margin-left: 20px;
+  height: 406px;
+}
+.contacts_img img {
+  border-radius: 10px;
+  height: 100%;
+  object-fit: cover;
+}
+.contacts .map_wrap {
+  z-index: 1;
+  position: relative;
+  width: 608px;
+  height: 406px;
+  border-radius: 10px;
+}
+.contacts #map {
   position: absolute;
   top: 0;
   left: 0;
-  display: block;
   width: 100%;
-  height: auto;
-  object-fit: cover;
+  height: 100%;
   border-radius: 10px;
-} */
-  
-
-
-
+  overflow: hidden;
+}
+.contacts #map2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.mt86 {
+  margin-top: 86px;
+}
 
 
 
@@ -903,6 +984,29 @@
     padding: 20px 15px 10px;
   }
 
+  .contacts-info_adress {
+    font-size: 18px;
+  }
+  .contacts-info_time {
+    font-size: 19px;
+  }
+  .contacts-info_operating-mode {
+    font-size: 17px;
+  }
+  .contacts-info_link {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 25px;
+  }
+  .contacts-info_phone {
+    font-size: 18px;
+    margin-bottom: 11px;
+  }
+  .contacts-info_phone a {
+    font-size: 18px;
+  }
+
+
 
 
 
@@ -993,6 +1097,48 @@
     padding-top: 73px;
     padding-bottom: 93px;
   }
+  .contacts-box {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .contacts-info {
+    margin-right: 0px;
+    margin-bottom: 43px;
+}
+.contacts .map_wrap {
+  width: 100%;
+  height: 373px;
+  margin-bottom: 27px;
+}
+.contacts_img {
+  margin-left: 0px;
+  height: auto;
+  width: 100%;
+}
+.contacts_img img {
+  width: 100%;
+  height: auto;
+}
+.contacts-info_adress {
+  font-size: 22px;
+}
+.contacts-info_time {
+  font-size: 24px;
+}
+.contacts-info_operating-mode {
+  font-size: 20px;
+}
+.contacts-info_link {
+  font-size: 19px;
+}
+.contacts-info_phone {
+  font-size: 20px;
+}
+.contacts-info_phone a {
+  font-size: 20px;
+}
+
+
 
 
 
@@ -1498,7 +1644,6 @@
   line-height: 10px;
 }
 
-
 .documents-page .s-project {
   padding-top: 42px;
   padding-bottom: 42px;
@@ -1508,6 +1653,44 @@
 }
 
 
+.contacts-info_adress {
+  font-size: 11px;
+  line-height: 1.2;
+  margin-bottom: 11px;
+}
+.contacts-info_time {
+  font-size: 12px;
+  margin-bottom: 12px;
+}
+.contacts-info_operating-mode {
+  font-size: 10px;
+  line-height: 1.5;
+}
+.contacts-info_link {
+  font-size: 9px;
+  line-height: 1.5;
+  margin-bottom: 29px;
+}
+.contacts-info_phone {
+  font-size: 10px;
+  margin-bottom: 10px;
+}
+.contacts-info_phone a {
+  font-size: 10px;
+}
+.contacts-info {
+  margin-bottom: 21px;
+}
+.contacts .map_wrap {
+  height: 187px;
+}
+.mt86 {
+  margin-top: 56px;
+}
+.contacts {
+  padding-top: 34px;
+  padding-bottom: 109px;
+}
 
 
 
