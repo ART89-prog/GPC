@@ -33,6 +33,9 @@ document.addEventListener("DOMContentLoaded",function(){
 
 
 
+
+
+
 	document.querySelector('.js-toggle').addEventListener('click', function(e){
 		e.preventDefault();
 		this.classList.toggle('active');

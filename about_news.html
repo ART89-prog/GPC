@@ -4,6 +4,10 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
 	<title>Document</title>
+
+	<link rel="stylesheet" href="css/swiper.css">
+	<link rel="stylesheet" href="css/swiper-bundle.min.css">
+	<link rel="stylesheet" href="css/fancybox.css">
 	<link rel="stylesheet" href="css/libs.min.css">
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/fonts.css">
@@ -139,7 +143,7 @@
 					</div>
 					<div class="s-news-line flex">
 						<div class="s-news-block">
-							<a href="#" class="s-news-item flex">
+							<a href="#hidden" class="s-news-item flex" data-fancybox >
 								<span class="s-news-item-img">
 									<img src="img/news-img1.jpg" alt="img">
 								</span>
@@ -151,7 +155,7 @@
 							</a>
 						</div>
 						<div class="s-news-block">
-							<a href="#" class="s-news-item flex">
+							<a href="#hidden" class="s-news-item flex" data-fancybox >
 								<span class="s-news-item-img">
 									<img src="img/news-img2.jpg" alt="img">
 								</span>
@@ -163,7 +167,7 @@
 							</a>
 						</div>
 						<div class="s-news-block">
-							<a href="#" class="s-news-item flex">
+							<a href="#hidden" class="s-news-item flex" data-fancybox >
 								<span class="s-news-item-img">
 									<img src="img/news-img3.jpg" alt="img">
 								</span>
@@ -175,7 +179,7 @@
 							</a>
 						</div>
 						<div class="s-news-block">
-							<a href="#" class="s-news-item flex">
+							<a href="#hidden" class="s-news-item flex" data-fancybox >
 								<span class="s-news-item-img">
 									<img src="img/news-img4.jpg" alt="img">
 								</span>
@@ -187,7 +191,7 @@
 							</a>
 						</div>
 						<div class="s-news-block">
-							<a href="#" class="s-news-item flex">
+							<a href="#hidden" class="s-news-item flex" data-fancybox >
 								<span class="s-news-item-img">
 									<img src="img/news-img1.jpg" alt="img">
 								</span>
@@ -199,7 +203,7 @@
 							</a>
 						</div>
 						<div class="s-news-block">
-							<a href="#" class="s-news-item flex">
+							<a href="#hidden" class="s-news-item flex" data-fancybox >
 								<span class="s-news-item-img">
 									<img src="img/news-img2.jpg" alt="img">
 								</span>
@@ -211,7 +215,7 @@
 							</a>
 						</div>
 						<div class="s-news-block">
-							<a href="#" class="s-news-item flex">
+							<a href="#hidden" class="s-news-item flex" data-fancybox >
 								<span class="s-news-item-img">
 									<img src="img/news-img3.jpg" alt="img">
 								</span>
@@ -223,7 +227,7 @@
 							</a>
 						</div>
 						<div class="s-news-block">
-							<a href="#" class="s-news-item flex">
+							<a href="#hidden" class="s-news-item flex" data-fancybox >
 								<span class="s-news-item-img">
 									<img src="img/news-img4.jpg" alt="img">
 								</span>
@@ -339,9 +343,48 @@
 			</div>
 		</footer>
 	</div>
+
+
+	<section class="modal" style="display: none; width: 100%;" id="hidden">
+		<div class="modal_title">
+			<a href="about_news.html"><img src="img/img/arrow_next.png" alt=""></a>
+			<span>Новости</span> 
+		</div>
+		<div class="modal-box">
+			<div class="modal-box_cont">
+				<div class="swiper-container">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<img src="img/img/news_slider.jpg" alt="">
+						</div>
+						<div class="swiper-slide">
+							<img src="img/img/news_slider.jpg" alt="">
+						</div>
+						<div class="swiper-slide">
+							<img src="img/img/news_slider.jpg" alt="">
+						</div>
+					</div>
+
+					<div class="swiper-button-prev"></div>
+					<div class="swiper-button-next"></div>
+
+				</div>
+				<div class="modal_date">25 июля 2022</div>  
+				<div class="text_block">
+					<h3>Старт продаж квартир нового дома в ЖК «Атмосфера» на Октябрьском</h3>
+					<p>С другой стороны консультация с широким активом требуют от нас анализа форм развития. Равным образом новая модель организационной деятельности позволяет выполнять важные задания по разработке направлений прогрессивного развития. Повседневная практика показывает, что укрепление и развитие структуры играет важную роль в формировании позиций, занимаемых участниками в отношении поставленных задач. Значимость этих проблем настолько очевидна, что постоянный количественный рост и сфера нашей активности влечет за собой процесс внедрения и модернизации системы обучения кадров, соответствует насущным потребностям. Задача организации, в особенности же рамки и место обучения кадров требуют определения и уточнения новых предложений. Разнообразный и богатый опыт постоянное информационно-пропагандистское обеспечение нашей деятельности позволяет оценить значение дальнейших направлений развития.</p>
+					<p>Задача организации, в особенности же рамки и место обучения кадров требуют определения и уточнения новых предложений. Разнообразный и богатый опыт постоянное информационно-пропагандистское обеспечение нашей деятельности позволяет оценить значение дальнейших направлений развития.</p>
+				</div>	
+			</div>			
+		</div>		
+	</section>
+
+
+	<script src="js/jquery-3.5.0.min.js"></script>
+	<script src="js/swiper-bundle.min.js"></script>
+	<script src="js/fancybox.min.js"></script>
 	<script src="js/libs.min.js"></script>
 	<script src="js/common.js"></script>
-	<script src="http://api-maps.yandex.ru/2.1/?lang=ru_RU" ></script>
-	<script src="js/map.js"></script>
+	<script src="js/script.js"></script>
 </body>
 </html>		
